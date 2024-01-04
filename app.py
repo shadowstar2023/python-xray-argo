@@ -17,16 +17,16 @@ app = Flask(__name__)
 FILE_PATH = os.environ.get('FILE_PATH', './temp')
 PROJECT_URL = os.environ.get('URL', '') # 填写项目分配的url可实现自动访问，例如：https://www.google.com，留空即不启用该功能
 INTERVAL_SECONDS = int(os.environ.get("TIME", 120))                   # 访问间隔时间，默认120s，单位：秒
-UUID = os.environ.get('UUID', 'abe2f2de-13ae-4f1f-bea5-d6c881ca3888')
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nz.abcd.com')        # 哪吒3个变量不全不运行
-NEZHA_PORT = os.environ.get('NEZHA_PORT', '5555')                  # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
-NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
+UUID = os.environ.get('UUID', '06f53fab-ad06-4783-9046-162793dfe194')
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nezha.130136.xyz')        # 哪吒3个变量不全不运行
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '443')                  # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
+NEZHA_KEY = os.environ.get('NEZHA_KEY', '6Kf5QzDNLwaaPwSqxq')
 ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')                   # 国定隧道域名，留空即启用临时隧道
 ARGO_AUTH = os.environ.get('ARGO_AUTH', '')                      # 国定隧道json或token，留空即启用临时隧道
 CFIP = os.environ.get('CFIP', 'skk.moe')
 NAME = os.environ.get('NAME', 'Vls')
-PORT = int(os.environ.get('PORT', 3000))            # http端口，也是订阅端口，游戏玩具类需改为分配的端口，否则无法订阅
-ARGO_PORT = int(os.environ.get('ARGO_PORT', 8001)) # Argo端口，固定隧道token请改回8080或在cf后台设置的端口与这里对应
+PORT = int(os.environ.get('PORT', 443))            # http端口，也是订阅端口，游戏玩具类需改为分配的端口，否则无法订阅
+ARGO_PORT = int(os.environ.get('ARGO_PORT', 443)) # Argo端口，固定隧道token请改回8080或在cf后台设置的端口与这里对应
 CFPORT = int(os.environ.get('CFPORT', 443))       # 节点端口
 
 # Create directory if it doesn't exist
